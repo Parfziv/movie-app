@@ -18,6 +18,7 @@
 <script>
     import Movies from  "../components/Movies.svelte";
     export let movies;
+    
 </script>
 
 <section>
