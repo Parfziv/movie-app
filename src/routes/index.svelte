@@ -11,12 +11,16 @@
                 {movies : data.results}
             }
         }
+        return{
+            error: new Error('Results not found..'),
+        }
     }
 
 </script>
 
 <script>
     import Movies from  "../components/Movies.svelte";
+import Error from "./__error.svelte";
     export let movies;
     
 </script>
