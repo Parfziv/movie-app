@@ -11,7 +11,7 @@
 </section>
 <style>
     h1{
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
         font-family: sans-serif;
         color: #800080;

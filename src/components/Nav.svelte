@@ -1,15 +1,15 @@
 
-
 <div class="home">
-
     <a href="/">Home</a>
 </div>
 
 <style>
     .home{
-        min-height:10vh;
-        padding: 1rem;
-        text-align: center;
+        display: flex;
+        align-items: center;
+        min-height: 10vh;
+        justify-content: center;
+        font-size: 2rem;
     }
     a{
         text-decoration: none;
