@@ -16,8 +16,9 @@
 
 <script>
     export let tvDetail;
+    import {fly} from 'svelte/transition';
 </script>
-<div class="container">
+<div class="container" in:fly={{ y: 50, duration: 500, delay:500}} out:fly={{ duration: 500}}>
 
     <div class="image-container">
         <img src={`https://image.tmdb.org/t/p/original` + tvDetail.backdrop_path} alt={tvDetail.name}>

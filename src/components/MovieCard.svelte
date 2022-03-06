@@ -5,7 +5,7 @@
     <div class="container">
 
         <div class="movie-list">
-            <a href={`/tvshow/` +movie.id}>
+            <a sveltekit:noscroll sveltekit:prefetch href={`/tvshow/` +movie.id}>
                 <img src={`https://image.tmdb.org/t/p/w300` + movie.poster_path} alt={movie.name}>
             </a>
             <div class="description">

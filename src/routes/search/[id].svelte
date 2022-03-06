@@ -15,6 +15,7 @@
 </script>
 <script>
     import MovieCard from "../../components/MovieCard.svelte";
+import Error from "../__error.svelte";
     export let searchTv;
 </script>
 

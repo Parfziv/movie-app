@@ -20,11 +20,14 @@
 
 <script>
     import Movies from  "../components/Movies.svelte";
+    import SearchMovies from "../components/SearchMovies.svelte";
 import Error from "./__error.svelte";
+import {fly} from 'svelte/transition';
     export let movies;
     
 </script>
 
-<section>
+<section in:fly={{ y: 50, duration: 500, delay:500}} out:fly={{ duration: 500}}>
+    <SearchMovies/>
     <Movies {movies}/>
 </section>

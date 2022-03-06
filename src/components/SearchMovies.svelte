@@ -2,6 +2,7 @@
     let inputValue = '';
     let active = false;
     import { goto } from '$app/navigation';
+    import {fly} from 'svelte/transition';
     function cancelActive(){
         if(inputValue){
             active = !active;
@@ -21,7 +22,7 @@
          type="search"
         placeholder="Search Tv shows..">
         {#if inputValue}
-        <button>Search </button>
+        <button in:fly={{ y: 0, duration: 500}} out:fly={{ y: 0, duration: 500}}>Search </button>
         {/if}
     </form>
 </div>
@@ -30,7 +31,6 @@
     .home{
         display: flex;
         justify-content: flex-end;
-        min-height:5vh;
         padding: 1rem;
     }
     input{
@@ -38,6 +38,7 @@
         outline: none;
         padding: 0.3rem;
         border-radius: 0.2rem;
+        width: 100%;
     }
     form{
         display: flex;

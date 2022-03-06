@@ -1,5 +1,4 @@
 <script>
-    import SearchMovies from "../components/SearchMovies.svelte";
     import Nav from "../components/Nav.svelte";
     import global from "../styles.css";
 </script>
@@ -7,7 +6,7 @@
     <title>TV Database</title>
 </svelte:head>
 <Nav/>
-<SearchMovies/>
+
 <slot/>
 <footer>
     <p>Made with <span>&#128151</span> by Sudan.</p>
